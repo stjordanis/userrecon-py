@@ -1,9 +1,9 @@
-# userrecon-py
+## userrecon-py
 Find usernames in social networks.
 
 ---
 
-### Installation
+#### Installation
 
 1. Install dependencies (Debian/Ubuntu):
 ```
@@ -18,7 +18,7 @@ userrecon-py --help
 
 ---
 
-### Building from Source
+#### Building from Source
 
 Clone this repository, and:
 ```
@@ -30,7 +30,7 @@ sudo python3 setup.py install
 
 ---
 
-### Update
+#### Update
 
 To update this tool to the latest version, run:
 ```
@@ -40,7 +40,7 @@ userrecon-py --version
 
 ---
 
-### Usage
+#### Usage
 Start by printing the available actions by running `userrecon-py --help`. Then you can perform the following tests:
 
 ```
