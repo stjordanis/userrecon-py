@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+
+import argparse
+import asyncio
+import sys
+
+try:
+    from os import path
+    sys.path.insert(0, path.abspath(path.join(path.dirname(__file__), '..')))
+
+    from userrecon.version import __version__
+    from userrecon import core
+    from docopt import docopt
+except ModuleNotFoundError as error:
+    print('[-] error: {}'.format(error))
+    sys.exit(1)
+
+usage = """userrecon-py v{}
+
+Usage:
+    userrecon target <username> [-o FILENAME]   
+    userrecon (-h | --help)
+    userrecon --version
+
+Options:
+    -o, --output    save output in json format.
+    -h, --help      show this screen.
+    --version       show version
+""".format(__version__)
+
+def main(args):
+    core.print_sexy_banner()
+    username = args['<username>']
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(core.verify_username(username))
+
+    if args['--output']:
+        filename = args['FILENAME']
+        core.generate_json_file(filename)
+
+if __name__ == "__main__":
+
+    # set arguments
+    args = docopt(usage, version='userrecon-py: v{}'.format(__version__))
+    main(args)
