@@ -62,4 +62,6 @@ links = {
     'okcupid'   :'https://www.okcupid.com/profile/{}',
     'trip'      :'https://www.trip.skyscanner.com/user/{}',
     'ello'      :'https://ello.co/{}',
+    'hackerone' :'https://hackerone.com/{}',
+    'freelancer':'https://www.freelancer.com/u/{}'
 }
