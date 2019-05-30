@@ -4,8 +4,9 @@ Find usernames in social networks.
 <p align="center">
     <img alt="userrecon-py" src="https://i.imgur.com/6ms6lIe.gif"/>
     <p align="center">
-        <a href="https://github.com/decoxviii/userrecon-py/releases/latest"><img alt="Release" src="https://img.shields.io/github/tag/decoxviii/userrecon-py.svg?style=flat-square"></a>
-        <a href="https://github.com/decoxviii/userrecon-py/blob/master/LICENSE"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
+        <a href="https://github.com/decoxviii/userrecon-py/releases/latest"><img alt="Release" src="https://img.shields.io/github/tag/decoxviii/userrecon-py.svg"></a>
+        <a href="https://github.com/decoxviii/userrecon-py/blob/master/LICENSE"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+         <a href="https://twitter.com/decoxviii"><img alt="Twitter" src="https://img.shields.io/badge/twitter-@decoxviii-blue.svg"></a>
     </p>
 </p>
 
